@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>PROCESO</servlet-name>
+        <servlet-class>CONTROLADOR.PROCESO</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>REGISTRATE</servlet-name>
+        <servlet-class>CONTROLADOR.REGISTRATE</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>PERSONA</servlet-name>
+        <servlet-class>MODELO.PERSONA</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>COOKIEE</servlet-name>
+        <servlet-class>CONTROLADOR.COOKIEE</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PROCESO</servlet-name>
+        <url-pattern>/PROCESO</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>REGISTRATE</servlet-name>
+        <url-pattern>/REGISTRATE</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>PERSONA</servlet-name>
+        <url-pattern>/PERSONA</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>COOKIEE</servlet-name>
+        <url-pattern>/COOKIEE</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
